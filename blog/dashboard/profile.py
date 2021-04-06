@@ -1,8 +1,8 @@
 from flask import (request, redirect, render_template, url_for, session, flash)
 from flask.views import MethodView
 
-from flaskblog import db
-from flaskblog.decorator import login_required
+from blog import db
+from blog.decorator import login_required
 
 
 class ProfileInformation(MethodView):

@@ -3,7 +3,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from flask_script import Manager, Server
-from flaskblog import (app, config)
+from blog import (app, config)
 
 manager = Manager(app)
 manager.add_command("runserver",

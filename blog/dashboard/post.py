@@ -7,16 +7,16 @@ from werkzeug import secure_filename
 
 import sys
 import flask
-from flaskblog import db, BASE_DIR
-from flaskblog.auth import requires_auth
-from flaskblog.decorator import login_required
-from flaskblog.db_util import is_post_exists
+from blog import db, BASE_DIR
+from blog.auth import requires_auth
+from blog.decorator import login_required
+from blog.db_util import is_post_exists
 import json
 import yaml
 
 from bson import json_util
 
-from flaskblog.dashboard import dashboard
+from blog.dashboard import dashboard
 
 
 class List(MethodView):

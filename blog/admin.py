@@ -3,9 +3,9 @@ from flask.views import MethodView
 from flask_mongoengine.wtf import model_form
 from flask_mongoengine.pagination import Pagination
 
-from flaskblog.auth import requires_auth
-from flaskblog.models import (Post, Tag)
-from flaskblog import config
+from blog.auth import requires_auth
+from blog.models import (Post, Tag)
+from blog import config
 
 admin = Blueprint('admin', __name__, template_folder='templates')
 

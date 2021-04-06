@@ -2,9 +2,9 @@ from flask import (Blueprint, request, redirect, render_template, url_for)
 from flask.views import MethodView
 # from flask_mongoengine.wtf import model_form
 
-# from flaskblog.models import (Post, Tag)
-from flaskblog import config
-from flaskblog import db
+# from blog.models import (Post, Tag)
+from blog import config
+from blog import db
 
 posts = Blueprint('posts', __name__, template_folder='templates')
 

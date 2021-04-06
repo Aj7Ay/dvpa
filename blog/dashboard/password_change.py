@@ -1,11 +1,11 @@
 from flask import (request, redirect, render_template, url_for, session, flash)
 from flask.views import MethodView
 
-from flaskblog import db
-from flaskblog.decorator import login_required
+from blog import db
+from blog.decorator import login_required
 
-from flaskblog.dashboard import dashboard
-from flaskblog.decorator import login_required
+from blog.dashboard import dashboard
+from blog.decorator import login_required
 
 import hashlib
 

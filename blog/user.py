@@ -1,9 +1,9 @@
 from flask import (Blueprint, request, redirect, render_template, url_for, flash, session, render_template_string)
 from flask.views import MethodView
-from flaskblog import db
-from flaskblog import auth
-from flaskblog import db_util
-from flaskblog.decorator import anonymous_required, login_required
+from blog import db
+from blog import auth
+from blog import db_util
+from blog.decorator import anonymous_required, login_required
 
 import hashlib
 

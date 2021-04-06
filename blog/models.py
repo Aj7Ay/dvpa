@@ -2,7 +2,7 @@ import datetime
 from flask import url_for
 from flask_peewee.utils import slugify
 
-from flaskblog import db
+from blog import db
 
 
 class Tag(db.Document):

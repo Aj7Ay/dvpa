@@ -1,5 +1,4 @@
-from flaskblog import db
-
+from blog import db
 
 def is_user_exists(email):
     cur = db.connection.cursor()
@@ -25,4 +24,3 @@ def is_post_exists(post_id):
         return False
 
     return True
-

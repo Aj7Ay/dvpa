@@ -1,7 +1,7 @@
 from functools import wraps
 from flask import request, Response, session
-from flaskblog import config
-from flaskblog import db
+from blog import config
+from blog import db
 
 import hashlib
 
