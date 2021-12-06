@@ -6,10 +6,7 @@ from flask_script import Manager, Server
 from blog import (app, config)
 
 manager = Manager(app)
-manager.add_command("runserver",
-                    Server(use_debugger=config.debugger,
-                           use_reloader=config.reloader,
-                           host=config.HOSTNAME))
+manager.add_command("runserver", Server(use_debugger=config.debugger, use_reloader=config.reloader, host='0.0.0.0', port=8000))
 
 if __name__ == '__main__':
     manager.run()

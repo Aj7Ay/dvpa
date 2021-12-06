@@ -1,3 +1,5 @@
+import os
+
 # Host & Databases
 DB_HOST = os.environ['DB_HOST']
 DB_NAME = os.environ['DB_NAME']
