@@ -1,0 +1,25 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    image: flask
+    environment:
+      DB_HOST: 'db'
+      DB_NAME: 'blog'
+      DB_USER: 'admin'
+      DB_PASS: 'admin'
+    ports:
+      - "8000:8000"
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'blog'
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'admin'
+      MYSQL_ROOT_PASSWORD: 'root'
+    volumes:
+      - dbdata:/var/lib/mysql
+
+volumes:
+  dbdata:
