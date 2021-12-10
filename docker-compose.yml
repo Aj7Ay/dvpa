@@ -5,6 +5,7 @@ services:
     build: .
     image: flask
     environment:
+      WERKZEUG_DEBUG_PIN: 'off'
       DB_HOST: 'db'
       DB_NAME: 'blog'
       DB_USER: 'admin'
