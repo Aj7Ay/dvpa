@@ -11,7 +11,7 @@ services:
       DB_USER: 'admin'
       DB_PASS: 'admin'
     volumes:
-      - /var/run/docker/docker.sock:/var/run/docker/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "8000:8000"
   db:
